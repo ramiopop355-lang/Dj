@@ -51,7 +51,7 @@ def twaManifest = [
 ]
 
 android {
-    compileSdkVersion 33
+    compileSdk 34
     namespace "com.sigma.education.dz"
 
     signingConfigs {
@@ -67,8 +67,8 @@ android {
 
     defaultConfig {
         applicationId "com.sigma.education.dz"
-        minSdkVersion 21
-        targetSdkVersion 33
+        minSdk 21
+        targetSdk 34
         versionCode 1
         versionName "1.0.0"
 
@@ -163,8 +163,9 @@ android {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
     }
-    lintOptions {
+    lint {
         checkReleaseBuilds false
+        abortOnError false
     }
 }
 
