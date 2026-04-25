@@ -1,4 +1,4 @@
-name: Build Siigma Android AAB
+name: Build Sigma Android AAB
 
 on:
   push:
